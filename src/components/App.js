@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import "../styles/App.css";
+import "./styles.css";
 class Timer extends React.Component {
   constructor(props) {
     super(props);
@@ -60,6 +60,7 @@ class Timer extends React.Component {
             Start
           </button>
         </div>
+        <h1 className="heading-timer">{this.state.time}</h1>
         <div
           className="ball"
           style={{ left: this.state.x, top: this.state.y }}
